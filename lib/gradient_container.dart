@@ -1,6 +1,16 @@
 import 'package:dice_roller_app/styled_text.dart';
 import 'package:flutter/material.dart';
 
+const Alignment alignmentBegin = Alignment.topLeft;
+const Alignment alignmentEnd = Alignment.bottomRight;
+
+const Color colorBegin = Colors.blue;
+const Color colorEnd = Colors.red;
+
+const String textDiceRoller = 'dice roller';
+const TextStyle textStyleDiceRoller =
+    TextStyle(fontSize: 28, color: Colors.white);
+
 class GradientContainer extends StatelessWidget {
   const GradientContainer({
     super.key,
@@ -11,18 +21,18 @@ class GradientContainer extends StatelessWidget {
     return Container(
       decoration: const BoxDecoration(
         gradient: LinearGradient(
-          begin: Alignment.topLeft,
-          end: Alignment.bottomRight,
+          begin: alignmentBegin,
+          end: alignmentEnd,
           colors: [
-            Colors.blue,
-            Colors.red,
+            colorBegin,
+            colorEnd,
           ],
         ),
       ),
       child: const Center(
         child: StyledText(
-          text: 'Dice Roller',
-          style: TextStyle(fontSize: 28, color: Colors.white),
+          text: textDiceRoller,
+          //?style: textStyleDiceRoller,
         ),
       ),
     );

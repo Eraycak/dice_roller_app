@@ -13,8 +13,8 @@ class StyledText extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Text(
-      text,
-      style: style ?? Theme.of(context).textTheme.headline4,
+      text.toUpperCase(),
+      style: style ?? Theme.of(context).primaryTextTheme.displayLarge,
     );
   }
 }
