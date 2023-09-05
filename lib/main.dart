@@ -7,23 +7,17 @@ const Alignment alignmentEnd = Alignment.topRight;
 const Color colorBegin = Colors.blue;
 const Color colorEnd = Colors.red;
 
-const String textGradientContainer = 'dice roller test';
-const TextStyle textStyleGradientContainer =
-    TextStyle(fontSize: 28, color: Colors.white);
-
 void main() {
   runApp(
-    MaterialApp(
+    const MaterialApp(
       home: Scaffold(
-        // body: GradientContainer(
-        //   alignmentBegin: alignmentBegin,
-        //   alignmentEnd: alignmentEnd,
-        //   colorBegin: colorBegin,
-        //   colorEnd: colorEnd,
-        //   textGradientContainer: textGradientContainer,
-        //   textStyleGradientContainer: textStyleGradientContainer,
-        // ),
-        body: GradientContainer.defaultContainer(),
+        body: GradientContainer(
+          alignmentBegin: alignmentBegin,
+          alignmentEnd: alignmentEnd,
+          colorBegin: colorBegin,
+          colorEnd: colorEnd,
+        ),
+        // body: GradientContainer.defaultContainer(),
       ),
     ),
   );
