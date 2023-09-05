@@ -1,4 +1,4 @@
-import 'package:dice_roller_app/dice_roller.dart';
+import 'package:dice_roller_app/change_gradient_container_color.dart';
 import 'package:flutter/material.dart';
 
 class GradientContainer extends StatelessWidget {
@@ -31,20 +31,6 @@ class GradientContainer extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      decoration: BoxDecoration(
-        gradient: LinearGradient(
-          begin: alignmentBegin,
-          end: alignmentEnd,
-          colors: [
-            colorBegin,
-            colorEnd,
-          ],
-        ),
-      ),
-      child: const Center(
-        child: DiceRoller(),
-      ),
-    );
+    return const ChangeColorOfContainer();
   }
 }

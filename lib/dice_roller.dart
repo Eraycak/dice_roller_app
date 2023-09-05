@@ -9,8 +9,10 @@ const TextStyle textStyleGradientContainer =
 final random = Random();
 
 class DiceRoller extends StatefulWidget {
+  final VoidCallback onRollDice;
   const DiceRoller({
     Key? key,
+    required this.onRollDice,
   }) : super(key: key);
 
   @override
@@ -28,6 +30,7 @@ class _DiceRollerState extends State<DiceRoller> {
       currentDiceRoll = random.nextInt(6) + 1;
       activeDiceImage = 'assets/images/dice-$currentDiceRoll.png';
     });
+    widget.onRollDice();
   }
 
   @override
