@@ -1,7 +1,7 @@
 # dice_roller_app
  Flutter&Dart The Complete Guide practice
 
- This is the showcase of the app.
+ This is the video of the app.
 
 
  
